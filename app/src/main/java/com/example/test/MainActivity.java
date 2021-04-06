@@ -67,16 +67,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if(option == 0) {
             result = number11+number22;
+            builder.setMessage(number1 + "+" + number2 + "=" + String.valueOf(result));
         } else if(option == 1) {
             result = number11-number22;
+            builder.setMessage(number1 + "-" + number2 + "=" + String.valueOf(result));
         }else if(option == 2) {
             result = number11*number22;
+            builder.setMessage(number1 + "*" + number2 + "=" + String.valueOf(result));
         }
         else if(option == 3) {
             result = number11/number22;
+            builder.setMessage(number1 + "/" + number2 + "=" + String.valueOf(result));
         }
 
-        builder.setMessage(number1 + "+" + number2 + "=" + String.valueOf(result));
 
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
